@@ -14,7 +14,7 @@ int findMin(int i, int j) {
 void optimizeMyMatrix() {
     for (int k = 0; k < matSize; k++) {
         for (int i = 0; i < matSize; i++) {
-            for (int j = 0; k < matSize; j++) {
+            for (int j = 0; j < matSize; j++) {
                 if (i != j && matrix[i][k] != 0 && matrix[k][j] != 0) {
                     matrix[i][j] = findMin(matrix[i][j], (matrix[i][k] + matrix[k][j]));
                 }

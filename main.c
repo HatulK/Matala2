@@ -2,7 +2,8 @@
 #include "my_mat.h"
 
 int main() {
-char var = scanf("%s",&var);
+char var;
+    scanf("%s",&var);
 while(var!='D'){
     if(var=='A') setMyMatrix();
     if(var=='B') isThereWay();
