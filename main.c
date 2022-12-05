@@ -6,8 +6,14 @@ char var;
     scanf("%s",&var);
 while(var!='D'){
     if(var=='A') setMyMatrix();
-    if(var=='B') isThereWay();
-    if(var=='C') findShortestPath();
+    if(var=='B') {
+        isThereWay();
+        printf("\n");
+    }
+    if(var=='C') {
+        findShortestPath();
+        printf("\n");
+    }
     scanf("%s",&var);
 }
 }
