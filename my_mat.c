@@ -16,7 +16,12 @@ void optimizeMyMatrix() {
         for (int i = 0; i < matSize; i++) {
             for (int j = 0; j < matSize; j++) {
                 if (i != j && matrix[i][k] != 0 && matrix[k][j] != 0) {
-                    matrix[i][j] = findMin(matrix[i][j], (matrix[i][k] + matrix[k][j]));
+                    if(matrix[i][j]!=0){
+                        matrix[i][j] = findMin(matrix[i][j], (matrix[i][k] + matrix[k][j]));
+                    }
+                    else {
+                        matrix[i][j] =(matrix[i][k] + matrix[k][j]);
+                    }
                 }
             }
         }
