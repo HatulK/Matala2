@@ -41,8 +41,8 @@ void isThereWay() {
     int i, j;
     scanf("%d", &i);
     scanf("%d", &j);
-    if (matrix[i][j] != 0) printf("False");
-    else printf("True");
+    if (matrix[i][j] != 0) printf("True");
+    else printf("False");
 }
 
 void findShortestPath() {
